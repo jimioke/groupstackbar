@@ -1,6 +1,9 @@
 # groupstackbar
 Python package for creating grouped and stacked bar plots using matplotlib.
 
+## Installing
+pip install groupstackbar
+
 ## Usage:
 Please refer to example.py
 
