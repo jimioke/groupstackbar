@@ -328,7 +328,6 @@ def plot_grouped_stacks(filename, BGV, fig_size=(10, 8),
     plt.tight_layout()
     plt.xticks([], [])
     plt.legend(ncol=len(sorted_order_for_stacking_H))
-    plt.savefig("test.png", dpi=200)
     return figure_
 
 

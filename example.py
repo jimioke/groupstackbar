@@ -1,8 +1,9 @@
-import matplotlib.pyplot 
+import matplotlib.pyplot as plt
 import csv
 import random
 import sys
 import os
+import groupstackbar
 
 def generate_dummy_data():
     with open('dummy_data.csv','w') as f:
@@ -16,10 +17,9 @@ def generate_dummy_data():
 generate_dummy_data()
 
 
-f = plot_grouped_stacks('dummy_data.csv', BGV=['State_SEIR','Week','Age_Cat'], extra_space_on_top = 30)
+f = groupstackbar.plot_grouped_stacks('dummy_data.csv', BGV=['State_SEIR','Week','Age_Cat'], extra_space_on_top = 30)
 
 
-plt.tight_layout()
 
 plt.savefig("output.png",dpi=500)
 
