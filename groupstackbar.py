@@ -39,9 +39,7 @@ import csv
 import random
 import sys
 import os
-
-
-
+import pandas as pd
 
 """
 Arguments: 
@@ -174,20 +172,8 @@ def plot_grouped_stacks(filename, BGV, fig_size=(10, 8),
     else:
         x_trim_group_label = x_trim_group_label*size[0]/100  # converting percentanges to inches
 
-
-
-
-    fileread_list = []
-
-   
-    with open(filename) as f:
-        for row in f:
-            r = row.strip().split(',')    
-            if len(r) != 4:
-                print ('4 items not found @ line ', c, ' of ', filename)
-                return
-            else:
-                fileread_list.append(r)
+    df = pd.read_csv(filename, delimiter=',', header=None)
+    fileread_list = [list(x) for x in df.values]
 
         
     # inputs: 
