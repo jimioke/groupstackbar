@@ -1,3 +1,4 @@
+[![Downloads](https://static.pepy.tech/personalized-badge/groupstackbar?period=total&units=international_system&left_color=black&right_color=yellowgreen&left_text=Downloads)](https://pepy.tech/project/groupstackbar)
 # groupstackbar
 Python package for creating grouped and stacked bar plots using matplotlib.
 
